@@ -10,7 +10,6 @@ public class TestContext : IdentityDbContext<TestUser>
 {
     public TestContext(DbContextOptions<TestContext> options) : base(options)
 	{
-		Database.EnsureCreated();
 	}
 	
 	public virtual DbSet<TestUser> Users => Set<TestUser>();

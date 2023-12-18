@@ -233,14 +233,14 @@ namespace Test.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "08bad430-6a0f-4a34-ad12-f37dc59f9aab",
+                            Id = "20ac48dc-21a1-4fce-beeb-bfa568366a90",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "07513955-7304-423b-a36d-0b25fb9c5062",
+                            ConcurrencyStamp = "c648e163-5ac7-4b2b-86f5-a9fad85e7d95",
                             Email = "sossiska@mail.ru",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "83a77c15-aca6-43d8-ac50-b850a07fc84e",
+                            SecurityStamp = "29d8ea67-7373-4cca-9709-265a6457e7a8",
                             Status = 0,
                             TwoFactorEnabled = false,
                             UserId = 1,
