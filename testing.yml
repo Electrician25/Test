@@ -1,0 +1,12 @@
+name: Test Authorization App
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the repository code
+        uses: actions/checkout@v3
+      - name: Install depenedencies
+        run: npm install      
+      - name: Test App
+        run: npm run test
