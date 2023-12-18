@@ -1,0 +1,21 @@
+﻿services:
+  test:
+    container_name: test-aspnet_container
+    build:
+      dockerfile: ./Dockerfile
+    image: test-aspnet_image
+    ports:
+      - 25545:5000
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1
+    ports:
+      - '5432:5432'
+    volumes: 
+      - db:/var/lib/postgresql/data
+volumes:
+  db:
+    driver: local
