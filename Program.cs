@@ -1,9 +1,11 @@
-using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Test.Areas.Identity.Data;
 using Test.Data;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddMvc(options => { options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()); });
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
