@@ -17,16 +17,5 @@ public class TestContext : IdentityDbContext<TestUser>
 	protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
 		base.OnModelCreating(modelBuilder);
-		modelBuilder.Entity<TestUser>().HasData(
-			 new TestUser[]
-			 {
-				new ()
-				{
-					UserId = 1,
-					UserName = "Test",
-					Email = "sossiska@mail.ru",
-					UserPassword = "Test123",
-				}
-			 });
 	}
 }
