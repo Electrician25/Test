@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.DataProtection;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Test.Areas.Identity.Data;
 using Test.Data;
