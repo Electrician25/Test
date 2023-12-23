@@ -8,7 +8,6 @@ namespace Test.Areas.Identity.Data
         public KeysContext(DbContextOptions<KeysContext> options)
             : base(options) { }
 
-        // This maps to the table that stores keys.
         public DbSet<DataProtectionKey> DataProtectionKeys { get; set; }
     }
 }
