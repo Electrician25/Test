@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Test.Areas.Identity.Data;
@@ -10,9 +11,12 @@ builder.Services.AddMvc(options => { options.Filters.Add(new AutoValidateAntifor
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<TestContext>(options => options.UseNpgsql(connectionString));
+builder.Services.AddDbContext<KeysContext>(options => options.UseNpgsql(connectionString));
 
 builder.Services.AddDefaultIdentity<TestUser>(options => 
 	options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<TestContext>();
+
+builder.Services.AddDataProtection().PersistKeysToDbContext<KeysContext>();
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
