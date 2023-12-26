@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MyProject\\Test\\Test\\Test.csproj": {}
+    "C:\\MyPrjct\\Test.csproj": {}
   },
   "projects": {
-    "D:\\MyProject\\Test\\Test\\Test.csproj": {
+    "C:\\MyPrjct\\Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProject\\Test\\Test\\Test.csproj",
+        "projectUniqueName": "C:\\MyPrjct\\Test.csproj",
         "projectName": "Test",
-        "projectPath": "D:\\MyProject\\Test\\Test\\Test.csproj",
+        "projectPath": "C:\\MyPrjct\\Test.csproj",
         "packagesPath": "C:\\Users\\sosis\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProject\\Test\\Test\\obj\\",
+        "outputPath": "C:\\MyPrjct\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\VisualStudioSDK\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\sosis\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,6 +40,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.12, )"

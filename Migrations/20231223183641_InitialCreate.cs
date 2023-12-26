@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Test.Migrations
 {
     /// <inheritdoc />
-    public partial class IninialCreate : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -159,11 +159,6 @@ namespace Test.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
-
-            migrationBuilder.InsertData(
-                table: "AspNetUsers",
-                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "Status", "TwoFactorEnabled", "UserId", "UserName", "UserPassword" },
-                values: new object[] { "20ac48dc-21a1-4fce-beeb-bfa568366a90", 0, "c648e163-5ac7-4b2b-86f5-a9fad85e7d95", "sossiska@mail.ru", false, false, null, null, null, null, null, false, "29d8ea67-7373-4cca-9709-265a6457e7a8", 0, false, 1, "Test", "Test123" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",

@@ -229,24 +229,6 @@ namespace Test.Migrations
                         .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "20ac48dc-21a1-4fce-beeb-bfa568366a90",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "c648e163-5ac7-4b2b-86f5-a9fad85e7d95",
-                            Email = "sossiska@mail.ru",
-                            EmailConfirmed = false,
-                            LockoutEnabled = false,
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "29d8ea67-7373-4cca-9709-265a6457e7a8",
-                            Status = 0,
-                            TwoFactorEnabled = false,
-                            UserId = 1,
-                            UserName = "Test",
-                            UserPassword = "Test123"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

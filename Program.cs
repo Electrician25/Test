@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.EntityFrameworkCore;
 using Test.Areas.Identity.Data;
 using Test.Data;
@@ -7,6 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<TestContext>(options => options.UseNpgsql(connectionString));
+builder.Services.AddDbContext<KeyContext>(options => options.UseNpgsql(connectionString));
+
+builder.Services.AddDataProtection().PersistKeysToDbContext<KeyContext>();
 
 builder.Services.AddDefaultIdentity<TestUser>(options => 
 	options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<TestContext>();
