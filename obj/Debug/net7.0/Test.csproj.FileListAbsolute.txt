@@ -531,3 +531,8 @@ C:\MyPrjct\bin\Debug\net7.0\Microsoft.AspNetCore.DataProtection.Abstractions.dll
 C:\MyPrjct\bin\Debug\net7.0\Microsoft.AspNetCore.DataProtection.EntityFrameworkCore.dll
 C:\MyPrjct\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\MyPrjct\bin\Debug\net7.0\System.Security.Cryptography.Xml.dll
+D:\MyProject\Test\Test\bin\Debug\net7.0\Microsoft.AspNetCore.DataProtection.dll
+D:\MyProject\Test\Test\bin\Debug\net7.0\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+D:\MyProject\Test\Test\bin\Debug\net7.0\Microsoft.AspNetCore.DataProtection.EntityFrameworkCore.dll
+D:\MyProject\Test\Test\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\MyProject\Test\Test\bin\Debug\net7.0\System.Security.Cryptography.Xml.dll
